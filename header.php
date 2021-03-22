@@ -20,20 +20,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-W539ZVH');</script>
 <!-- End Google Tag Manager -->
 	
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory');?>/imgs/favicon.png">
-
-<!--<script src="https://kit.fontawesome.com/a129e4b06b.js" crossorigin="anonymous"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>-->
-<!--<script src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js"></script>-->
-
-
-<!--<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Sans&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_directory');?>/imgs/favicon.png">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -78,8 +73,6 @@ function myFunction() {
 }
 </script>
 
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 
 
