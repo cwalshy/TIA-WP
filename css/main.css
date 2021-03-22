@@ -1,0 +1,582 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  background-color: #eee;
+
+}
+.topnav {
+  z-index: 2;
+  opacity: 1;
+}
+
+
+.logo img {
+  padding-top: .5%;
+   padding-left: 9.5%;
+   max-height: 7.5vh;
+   height: auto;
+   position: cover;
+   max-width: 10vw;
+   float: left;
+   margin-bottom: 2.75%;
+
+
+
+
+}
+.menu a {
+
+  float: right;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 24px 16px 0 16px;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+.menu {
+  padding-right: 9.5%;
+}
+
+
+#callToAction {
+  margin: 0 auto;
+  animation-delay: 0.4s;
+  background-image: url(../imgs/tia.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: scale(0.8);
+  background-position: center;
+  max-width: 100%;
+  min-height: 95vh;
+     animation: fadein 3.5s;
+    -moz-animation: fadein 3.5s; /* Firefox */
+    -webkit-animation: fadein 3.5s; /* Safari and Chrome */
+        opacity: 1;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: .8;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.callToAction.fade-in {
+        opacity: 1;
+}
+
+.caption-button {
+  background-color: #161616;
+  transition-duration: 0.4s;
+  color: #fff;
+  margin: .75% 5% 0.75% 0.75%;
+  padding: .75%;
+  border-radius: 10px;
+  border: none;
+  font-size: 28px;
+  text-decoration: none;
+  text-align: center;
+      background-color: transparent;
+
+  } /* Blue */
+
+.caption-button:hover {
+  background-color: #222;
+  color: #FF00FF;
+  border: none;
+
+
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 900px) {
+  .topnav a:not(:last-child) {
+    display: none;
+  }
+  .topnav  a {
+    float: left;
+  }
+  .topnav h2 {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 900px) {
+
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  #callToAction {
+    margin-top: 2.5%;
+    background-size: cover;
+  min-height: 45vh;
+  }
+  .topnav.responsive a {
+
+    float: none;
+    background-color: transparent;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+  .logo img {
+    display: none;
+  }
+}
+
+    .progress {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .progress .outer {
+        width: 100%;
+        height: 14px;
+        border-radius: 7px;
+        background: rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .progress .inner {
+        width: 100%;
+        height: 100%;
+        background: #FF00FF;
+        animation: loading 3s linear 3s 1;
+    }
+
+    @keyframes loading {
+        from{
+            width: 0%;
+        } to {
+          width: 100%;
+        }
+    }
+@media screen and (max-width: 1400px) {
+
+  .logo img {
+    padding-top: 0.95%;
+   max-height: 6.5vh;
+  }
+}
+
+
+.footer {
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+
+
+}
+
+.caption {
+  padding: 20% 10% 0 10%;
+  text-align: center;
+  margin: 0 10%;
+}
+
+.caption-form {
+  padding: 15% 10% 0 10%;
+  text-align: center;
+  margin: 0 10%;
+}
+.caption h1 {
+  font-family: futura-pt-bold;
+  border: white solid;
+  background-color: rgba(54, 25, 25, .4);
+  padding: 2.75%;
+  color: white;
+  bottom: 150%;
+  border-radius: 20px;
+  font-size: 64px;
+  font-weight: 900;
+}
+.caption-form h1 {
+  font-family: futura-pt-bold;
+  border: white solid;
+  background-color: rgba(255, 0, 255, .7);
+  padding: 2.75%;
+  color: white;
+  bottom: 150%;
+  border-radius: 20px;
+  font-size: 64px;
+  font-weight: 900;
+}
+.topnav h2 {
+  padding-top: .75%;
+  padding-bottom: .5%;
+  padding-left: 1.5%;
+  color: #000;
+  float: left;
+}
+
+.topnav a:hover {
+  background-color: #eee;
+  color: #FF00FF;
+}
+
+.topnav .title {
+  color: #75b2de;
+  padding-left: 0;
+  font-style: italic;
+
+}
+
+.content {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 18px;
+
+}
+.banner {
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #eee;
+  color: #FF00FF;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 5%;
+  min-height: 75vh;
+  padding: 0 8.5%;
+}
+.bannerLogo img {
+  padding-top: 0;
+  margin-top: 0;
+  height: 25vh;
+
+}
+.flex-grid {
+  border: 2px solid;
+  margin: 0 auto;
+  padding: 0;
+}
+.col {
+  border: 1px solid transparent;
+  flex: 1;
+  text-align: center;
+}
+
+.inner-col, .inner-col-right {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.col:nth-child(even):hover {
+  background-color: rgba(255, 0, 255, .7);
+}
+.col:nth-child(odd):hover .inner-col {
+display: block;
+float: left;
+border: 2px solid;
+}
+.col:nth-child(odd):hover .inner-col-right {
+display: block;
+float: left;
+border: 2px solid;
+}
+
+
+.col:nth-child(even){
+  background-color: transparent;
+}
+
+.col:nth-child(odd):hover {
+  background-color: rgba(75, 62, 168, .7);
+}
+
+.col:nth-child(odd) {
+  background-color: transparent;
+}
+
+
+
+.col > img {
+  width: 45%;
+
+}
+.col > p {
+  margin: 5% 10%;
+  font-size: 18px;
+}
+.col h1 {
+  color: white;
+  font-size: 24px;
+  margin: 7%;
+
+}
+.content > h1 {
+  padding-bottom: .75%
+}
+
+.flex-box {
+    justify-content: center;
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.flex-writing {
+  flex: 2.5;
+  background-color: lightgreen;
+  padding: 5% 2.5% 0 2.5%;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex-writing h1 {
+  color: white;
+  padding-bottom: 0.5%;
+  margin-bottom: 0.5%;
+  border-bottom: 2px solid black;
+}
+
+.flex-picture {
+  background-size: cover;
+  background-color: #A9E5D9;
+    background-image: url(../imgs/splash1.jpg);
+  background-repeat: no-repeat;
+  float: right;
+  height: 100vh;
+  flex: 4;
+}
+
+.clients {
+  margin: 0 auto;
+  width: 90%;
+  background-color: #eee;
+  text-align: center;
+}
+.clientImages
+{
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  padding-bottom: 5%;
+
+
+}
+div > h2 {
+  padding-bottom: 3%;
+}
+.image1 {
+
+ padding-right: 5%;
+  padding-left: 5%;
+}
+.image2 {
+
+ padding-right: 5%;
+  padding-left: 5%;
+}
+.image3 {
+
+ padding-right: 5%;
+  padding-left: 5%;
+}
+
+
+.image1 img {
+  border-left: 2px solid;
+    border-right: 2px solid;
+
+  flex: 2;
+  height: 20vh;
+ padding-right: 15%;
+  padding-left: 15%;
+}
+
+.image2 img {
+  flex: 2;
+  height: 20vh;
+   padding-right: 15%;
+  padding-left: 15%;
+  border-left: 2px solid;
+  border-right: 2px solid;
+
+}
+ .image3 img {
+  flex: 2;
+  height: 20vh;
+   padding-right: 15%;
+  padding-left: 15%;
+    border-left: 2px solid;
+
+  border-right: 2px solid;
+
+}
+
+.footer > .social-media h3  {
+  float: left;
+    margin: .5%;
+    padding: .5%;
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 100;
+}
+
+.copyright  {
+    flex: 2;
+}
+
+.copyright p  {
+    margin: 1.5% 0%;
+    padding-right: 10%;
+    flex: 2;
+    float: right;
+    font-size: 1em;
+    color: #000;
+}
+
+.social-media{
+  flex: 2;
+  padding-left: 5%;
+  color: #ddd;
+
+}
+.footer a {
+  float: left;
+
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 900;
+}
+
+
+.fa-facebook {
+    color: #3b5998 ;
+    border: solid .1px;
+    border-radius: 66%;
+    margin: .75%;
+    padding: .33%;
+
+}
+.fa-twitter {
+  color: #1DA1F2;
+  border-radius: 66%;
+  margin: .75%;
+  padding: .33%;
+}
+.fa-linkedin {
+  margin: .75%;
+  padding: .33%;
+  color: #0e76a8 ;
+
+}
+
+
+
+
+.contactForm {
+  opacity: 1;
+  background-color: white;
+  color: black;
+  margin: 15% 15% 5% 15%;
+  height: 40vh;
+  border-radius: 5px;
+-webkit-box-shadow: 10px 13px 29px 0px rgba(0,0,0,0.55);
+-moz-box-shadow: 10px 13px 29px 0px rgba(0,0,0,0.55);
+box-shadow: 10px 13px 29px 0px rgba(0,0,0,0.55);
+
+}
+
+.contactForm > h1 {
+  padding-top: 3.25%;
+  padding-bottom: 1.25%;
+  color: black;
+}
+.contactForm > h2 {
+  color: black;
+  font-weight: 200;
+  padding-bottom: 2.1%;
+  padding-right: 1.25%;
+  padding-left: 1.25%;
+}
+
+input {
+  color: white;
+  margin: 0 auto;
+  border: none;
+  border-bottom: solid lightgray 2px;
+  display: block;
+  margin-top: 2.85%;
+  margin-bottom: 2.5%;
+  width: 60%;
+  font-size: 24px;
+  background: transparent;
+}
+
+input::placeholder {
+padding: 0px;
+color: white;
+font-size: 24px;
+
+}
+
+button {
+  font-size: 18px;
+  background-color: lightblue;
+  border-radius: 24px;
+  padding: 2.5%;
+  color: black;
+}
+
+.view-profiles {
+  margin: 0 auto;
+  display: flex;
+  background-color: white;
+  width: 80%;
+  flex-direction: row;
+
+
+}
+
+.profile {
+  flex: 4;
+
+}
