@@ -20,6 +20,15 @@ add_action('wp_enqueue_scripts', 'load_stylesheets');
 
 //load scripts
 function addjs() {
+    
+
+	    wp_enqueue_script('jquery');
+	    
+
+
+		wp_register_script('bootstrap', get_template_directory_uri() . '/plugin-frameworks/bootstrap.min.js', array() , 1, 1, 1);
+	    
+	    wp_enqueue_script('bootstrap)');
 
 		wp_register_script('swiper', get_template_directory_uri() . 'plugin-frameworks/swiper.js', array() , 1, 1, 1);
 	    
