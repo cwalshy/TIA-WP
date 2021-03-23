@@ -10,6 +10,7 @@
 	$nine_gallery= get_field('gallery_nine');
 ?>
 
+
 <div class="small-gallery">
 	<div class="container1">
 		  			<div id='firstimg' class="img-container">
@@ -40,141 +41,33 @@
           <h4 class="modal-title"></h4>
         </div>
         <div class="modal-body">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-<?php if ( $first_gallery['image_4']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
- <?php endif; ?>
-<?php if ( $first_gallery['image_5']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
- <?php endif; ?>
-<?php if ( $first_gallery['image_6']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
- <?php endif; ?>
- <?php if ( $first_gallery['image_7']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
- <?php endif; ?><?php if ( $first_gallery['image_8']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
- <?php endif; ?>
- <?php if ( $first_gallery['case_study']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
- <?php endif; ?>
-  </ol>
+    
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                
+              <img class="d-block w-100" src="<?php echo $first_gallery["image_1"]?>" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="<?php echo $first_gallery["image_2"]?>" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="<?php echo $first_gallery["image_3"]?>" alt="Third slide">
+            </div>
+          </div>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-			<img class="imageGallery" src="<?php echo $first_gallery["image_1"]?>">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $first_gallery["image_2"]?>">
-      <div class="carousel-caption">
-
-      </div>
-
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $first_gallery["image_3"]?>">
-      <div class="carousel-caption">
-
-      </div>
-
-    </div>
-
-        	    <?php if ( $first_gallery['image_4']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $first_gallery["image_4"]?>">
-      <div class="carousel-caption">
-
-      </div>
-
-    </div>
-        <?php endif; ?>
-    	    <?php if ( $first_gallery['img_5']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $first_gallery["image_5"]?>">
-      <div class="carousel-caption">
-
-      </div>
-
-    </div>
-        <?php endif; ?>
-    	    <?php if ( $first_gallery['image_6']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $first_gallery["image_6"]?>">
-      <div class="carousel-caption">
-
-      </div>
-
-    </div>
-        <?php endif; ?>
-    	    <?php if ( $first_gallery['image_7']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $first_gallery["image_7"]?>">
-      <div class="carousel-caption">
-
-      </div>
-
-    </div>
-        <?php endif; ?>
-    	    <?php if ( $first_gallery['image_8']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $first_gallery["image_8"]?>">
-      <div class="carousel-caption">
-
-      </div>
-
-    </div>
-        <?php endif; ?>
-    	    <?php if ( $first_gallery['case_study']) : ?>
-    <div class="item">
-		  			<div id='firstimg' class="img-container">
-
-			<img class="image" src="<?php echo $first_gallery["client_logo"]?>">
-
-			  <div class="overlay ">
-	     <?php echo $first_gallery["case_study_text"]?>
-	    	<br>
-  <a href="<?php echo $first_gallery["client_logo"]?>"> <button type="button" class="btn btn-info btn-lg">Case Study</button></a>
-
-<!-- 	    	<br><a href="#">Read More</a>
- -->
-		</div>
-	</div>
-
-    </div>
-        <?php endif; ?>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
     </div>
-  </div>
-
+</div> 
 </div>
-	    <?php if ( $second_gallery['client_logo']) : ?>
+</div>
+</div>
+<?php if ( $second_gallery['client_logo']) : ?>
 
 <div class="container1">
   			<div id='firstimg' class="img-container">
@@ -204,96 +97,79 @@
           <h4 class="modal-title"></h4>
         </div>
         <div class="modal-body">
-          <div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
   <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic2" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic2" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic2" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 <?php if ( $second_gallery['image_4']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
  <?php endif; ?>
 <?php if ( $second_gallery['image_5']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
  <?php endif; ?>
 <?php if ( $second_gallery['image_6']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
  <?php endif; ?>
  <?php if ( $second_gallery['image_7']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
  <?php endif; ?><?php if ( $second_gallery['image_8']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
  <?php endif; ?>
  <?php if ( $second_gallery['case_study']) : ?>
-    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
  <?php endif; ?>
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+  <div class="carousel-inner" >
+      
+    <div class="carousel-item active">
 			<img class="imageGallery" src="<?php echo $second_gallery["image_1"]?>">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $second_gallery["image_2"]?>">
-      <div class="carousel-caption">
-
-      </div>
 
     </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $second_gallery["image_3"]?>">
-      <div class="carousel-caption">
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $second_gallery["image_2"]?>">
 
-      </div>
+    </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $second_gallery["image_3"]?>">
+
 
     </div>
 
         	    <?php if ( $second_gallery['image_4']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $second_gallery["image_4"]?>">
-      <div class="carousel-caption">
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $second_gallery["image_4"]?>">
 
-      </div>
 
     </div>
         <?php endif; ?>
+
     	    <?php if ( $second_gallery['image_5']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $second_gallery["image_5"]?>">
-      <div class="carousel-caption">
 
-      </div>
-
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $second_gallery["image_5"]?>">
     </div>
         <?php endif; ?>
     	    <?php if ( $second_gallery['image_6']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $second_gallery["image_6"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $second_gallery["image_6"]?>">
 
     </div>
         <?php endif; ?>
     	    <?php if ( $second_gallery['image_7']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $second_gallery["image_7"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $second_gallery["image_7"]?>">
+   
 
     </div>
         <?php endif; ?>
     	    <?php if ( $second_gallery['image_8']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $second_gallery["image_8"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $second_gallery["image_8"]?>">
+   
 
     </div>
         <?php endif; ?>
@@ -301,14 +177,7 @@
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+
 </div>
         </div>
         <div class="modal-footer">
@@ -377,86 +246,61 @@
  <?php endif; ?>
   </ol>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+    <!-- Wrapper for slides -->
+  <div class="carousel-inner" >
+      
+    <div class="carousel-item active">
 			<img class="imageGallery" src="<?php echo $third_gallery["image_1"]?>">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $third_gallery["image_2"]?>">
-      <div class="carousel-caption">
-
-      </div>
 
     </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $third_gallery["image_3"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $third_gallery["image_2"]?>">
 
     </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $third_gallery["image_3"]?>">
+
+
+    </div>
+
         	    <?php if ( $third_gallery['image_4']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $third_gallery["image_4"]?>">
-      <div class="carousel-caption">
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $third_gallery["image_4"]?>">
 
-      </div>
 
     </div>
         <?php endif; ?>
+
     	    <?php if ( $third_gallery['image_5']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $third_gallery["image_5"]?>">
-      <div class="carousel-caption">
 
-      </div>
-
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $third_gallery["image_5"]?>">
     </div>
         <?php endif; ?>
     	    <?php if ( $third_gallery['image_6']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $third_gallery["image_6"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $third_gallery["image_6"]?>">
 
     </div>
         <?php endif; ?>
     	    <?php if ( $third_gallery['image_7']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $third_gallery["image_7"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $third_gallery["image_7"]?>">
+   
 
     </div>
         <?php endif; ?>
     	    <?php if ( $third_gallery['image_8']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $third_gallery["image_8"]?>">
-      <div class="carousel-caption">
-
-      </div>
-
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $third_gallery["image_8"]?>">
+   
     </div>
         <?php endif; ?>
-
 
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+
 </div>
         </div>
         <div class="modal-footer">
@@ -525,85 +369,61 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+  <div class="carousel-inner" >s
+      
+    <div class="carousel-item active">
 			<img class="imageGallery" src="<?php echo $fourth_gallery["image_1"]?>">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fourth_gallery["image_2"]?>">
-      <div class="carousel-caption">
-
-      </div>
 
     </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fourth_gallery["image_3"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $fourth_gallery["image_2"]?>">
 
     </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $fourth_gallery["image_3"]?>">
+
+
+    </div>
+
         	    <?php if ( $fourth_gallery['image_4']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fourth_gallery["image_4"]?>">
-      <div class="carousel-caption">
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fourth_gallery["image_4"]?>">
 
-      </div>
 
     </div>
         <?php endif; ?>
+
     	    <?php if ( $fourth_gallery['image_5']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fourth_gallery["image_5"]?>">
-      <div class="carousel-caption">
 
-      </div>
-
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fourth_gallery["image_5"]?>">
     </div>
         <?php endif; ?>
     	    <?php if ( $fourth_gallery['image_6']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fourth_gallery["image_6"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fourth_gallery["image_6"]?>">
 
     </div>
         <?php endif; ?>
     	    <?php if ( $fourth_gallery['image_7']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fourth_gallery["image_7"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fourth_gallery["image_7"]?>">
+   
 
     </div>
         <?php endif; ?>
     	    <?php if ( $fourth_gallery['image_8']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fourth_gallery["image_8"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fourth_gallery["image_8"]?>">
+   
 
     </div>
         <?php endif; ?>
 
-
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+
 </div>
         </div>
         <div class="modal-footer">
@@ -672,69 +492,53 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+  <div class="carousel-inner" >
+      
+    <div class="carousel-item active">
 			<img class="imageGallery" src="<?php echo $fifth_gallery["image_1"]?>">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fifth_gallery["image_2"]?>">
-      <div class="carousel-caption">
-
-      </div>
 
     </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fifth_gallery["image_3"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $fifth_gallery["image_2"]?>">
 
     </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $fifth_gallery["image_3"]?>">
+
+
+    </div>
+
         	    <?php if ( $fifth_gallery['image_4']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fifth_gallery["image_4"]?>">
-      <div class="carousel-caption">
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fifth_gallery["image_4"]?>">
 
-      </div>
 
     </div>
         <?php endif; ?>
+
     	    <?php if ( $fifth_gallery['image_5']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fifth_gallery["image_5"]?>">
-      <div class="carousel-caption">
 
-      </div>
-
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fifth_gallery["image_5"]?>">
     </div>
         <?php endif; ?>
     	    <?php if ( $fifth_gallery['image_6']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fifth_gallery["image_6"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fifth_gallery["image_6"]?>">
 
     </div>
         <?php endif; ?>
     	    <?php if ( $fifth_gallery['image_7']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fifth_gallery["image_7"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fifth_gallery["image_7"]?>">
+   
 
     </div>
         <?php endif; ?>
     	    <?php if ( $fifth_gallery['image_8']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $fifth_gallery["image_8"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $fifth_gallery["image_8"]?>">
+   
 
     </div>
         <?php endif; ?>
@@ -742,14 +546,7 @@
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic5" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic5" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+
 </div>
         </div>
         <div class="modal-footer">
@@ -818,84 +615,61 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+  <div class="carousel-inner" >
+      
+    <div class="carousel-item active">
 			<img class="imageGallery" src="<?php echo $sixth_gallery["image_1"]?>">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $sixth_gallery["image_2"]?>">
-      <div class="carousel-caption">
-
-      </div>
 
     </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $sixth_gallery["image_3"]?>">
-      <div class="carousel-caption">
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $sixth_gallery["image_2"]?>">
 
-      </div>
+    </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $sixth_gallery["image_3"]?>">
+
 
     </div>
 
-    	    <?php if ( $sixth_gallery['image_4']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $sixth_gallery["image_4"]?>">
-      <div class="carousel-caption">
+        	    <?php if ( $sixth_gallery['image_4']) : ?>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $sixth_gallery["image_4"]?>">
 
-      </div>
 
     </div>
         <?php endif; ?>
+
     	    <?php if ( $sixth_gallery['image_5']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $sixth_gallery["image_5"]?>">
-      <div class="carousel-caption">
 
-      </div>
-
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $sixth_gallery["image_5"]?>">
     </div>
         <?php endif; ?>
     	    <?php if ( $sixth_gallery['image_6']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $sixth_gallery["image_6"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $sixth_gallery["image_6"]?>">
 
     </div>
         <?php endif; ?>
     	    <?php if ( $sixth_gallery['image_7']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $sixth_gallery["image_7"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $sixth_gallery["image_7"]?>">
+   
 
     </div>
         <?php endif; ?>
     	    <?php if ( $sixth_gallery['image_8']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $sixth_gallery["image_8"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $sixth_gallery["image_8"]?>">
+   
 
     </div>
         <?php endif; ?>
+
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic6" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generi6" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+
 </div>
         </div>
         <div class="modal-footer">
@@ -964,85 +738,61 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+  <div class="carousel-inner" >
+      
+    <div class="carousel-item active">
 			<img class="imageGallery" src="<?php echo $seventh_gallery["image_1"]?>">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $seventh_gallery["image_2"]?>">
-      <div class="carousel-caption">
-
-      </div>
 
     </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $seventh_gallery["image_3"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $seventh_gallery["image_2"]?>">
 
     </div>
-    	    <?php if ( $seventh_gallery['image_4']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $seventh_gallery["image_4"]?>">
-      <div class="carousel-caption">
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $seventh_gallery["image_3"]?>">
 
-      </div>
+
+    </div>
+
+        	    <?php if ( $seventh_gallery['image_4']) : ?>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $seventh_gallery["image_4"]?>">
+
 
     </div>
         <?php endif; ?>
+
     	    <?php if ( $seventh_gallery['image_5']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $seventh_gallery["image_5"]?>">
-      <div class="carousel-caption">
 
-      </div>
-
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $seventh_gallery["image_5"]?>">
     </div>
         <?php endif; ?>
     	    <?php if ( $seventh_gallery['image_6']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $seventh_gallery["image_6"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $seventh_gallery["image_6"]?>">
 
     </div>
         <?php endif; ?>
     	    <?php if ( $seventh_gallery['image_7']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $seventh_gallery["image_7"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $seventh_gallery["image_7"]?>">
+   
 
     </div>
         <?php endif; ?>
     	    <?php if ( $seventh_gallery['image_8']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $seventh_gallery["image_8"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $seventh_gallery["image_8"]?>">
+   
 
     </div>
         <?php endif; ?>
 
-
-
+  </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic7" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic7" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+
 </div>
         </div>
         <div class="modal-footer">
@@ -1052,9 +802,10 @@
 
     </div>
   </div>
-</div>
+
 </div>
     <?php endif; ?>
+    
 
 	    <?php if ( $eight_gallery['client_logo']) : ?>
 <div class="container1">
@@ -1109,87 +860,62 @@
     <li data-target="#carousel-example-generic" data-slide-to="8"></li>
  <?php endif; ?>
   </ol>
-
   <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
+  <div class="carousel-inner" >
+      
+    <div class="carousel-item active">
 			<img class="imageGallery" src="<?php echo $eight_gallery["image_1"]?>">
-      <div class="carousel-caption">
-
-      </div>
-    </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $eight_gallery["image_2"]?>">
-      <div class="carousel-caption">
-
-      </div>
 
     </div>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $eight_gallery["image_3"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $eight_gallery["image_2"]?>">
 
     </div>
-    	    <?php if ( $eight_gallery['image_4']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $eight_gallery["image_4"]?>">
-      <div class="carousel-caption">
+    <div class="carousel-item">
+			<img class="d-block w-100 imageGallery" src="<?php echo $eight_gallery["image_3"]?>">
 
-      </div>
+
+    </div>
+
+        	    <?php if ( $eight_gallery['image_4']) : ?>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $eight_gallery["image_4"]?>">
+
 
     </div>
         <?php endif; ?>
+
     	    <?php if ( $eight_gallery['image_5']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $eight_gallery["image_5"]?>">
-      <div class="carousel-caption">
 
-      </div>
-
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $eight_gallery["image_5"]?>">
     </div>
         <?php endif; ?>
     	    <?php if ( $eight_gallery['image_6']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $eight_gallery["image_6"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $eight_gallery["image_6"]?>">
 
     </div>
         <?php endif; ?>
     	    <?php if ( $eight_gallery['image_7']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $eight_gallery["image_7"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $eight_gallery["image_7"]?>">
+   
 
     </div>
         <?php endif; ?>
     	    <?php if ( $eight_gallery['image_8']) : ?>
-    <div class="item">
-			<img class="imageGallery" src="<?php echo $eight_gallery["image_8"]?>">
-      <div class="carousel-caption">
-
-      </div>
+    <div class="carousel-item">
+    			<img class="d-block w-100 imageGallery" src="<?php echo $eight_gallery["image_8"]?>">
+   
 
     </div>
         <?php endif; ?>
 
-
   </div>
 
   <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic8" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic8" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+
 </div>
         </div>
         <div class="modal-footer">
